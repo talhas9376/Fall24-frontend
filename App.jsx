@@ -1,36 +1,17 @@
-import WeekClass from './components/component1/WeekClass'
+import React from 'react';
+import Navbar from './Navbar';
+import MainContent from './MainContent';
+import LoginForm from './LoginForm';
+import './App.css';
 
-
-function App () {
-
+function App() {
   return (
- 
-      <div >
-        front end web development
-        <WeekClass/>
-        <WeekClass2/>
-      </div>
-      
-   
-  )
-}
-
-// function WeekClass (){
-//   return(
-//     <div>
-//       <h1>Week1 Class 2</h1>
-//     </div>
-//   )
-// }
-
-function WeekClass2 (){
-  return(
-    <div className='mainWeek'>
-      <h1>Week1 Class 3</h1>
+    <div className="main">
+      <Navbar />
+      <MainContent />
+      <LoginForm />
     </div>
-  )
+  );
 }
 
-
-
-export default App
+export default App;
